@@ -5,10 +5,11 @@
       <map>
         <entry key="..\:/Users/brknu/AndroidStudioProjects/toDoList/app/src/main/res/drawable/ic__todolistlogo.xml" value="0.172" />
         <entry key="..\:/Users/brknu/AndroidStudioProjects/toDoList/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
-        <entry key="..\:/Users/brknu/AndroidStudioProjects/toDoList/app/src/main/res/layout/fragment_add.xml" value="0.25" />
+        <entry key="..\:/Users/brknu/AndroidStudioProjects/toDoList/app/src/main/res/layout/fragment_add.xml" value="0.21403508771929824" />
         <entry key="..\:/Users/brknu/AndroidStudioProjects/toDoList/app/src/main/res/layout/fragment_task.xml" value="0.17255434782608695" />
         <entry key="..\:/Users/brknu/AndroidStudioProjects/toDoList/app/src/main/res/layout/fragment_update.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/brknu/AndroidStudioProjects/toDoList/app/src/main/res/layout/recycler_row.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/brknu/AndroidStudioProjects/toDoList/app/src/main/res/menu/task_menu.xml" value="0.253125" />
       </map>
     </option>
   </component>

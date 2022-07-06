@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
+import androidx.room.Query
 import com.berkan_uygunucarlar.todolist.database.TaskDao
 import com.berkan_uygunucarlar.todolist.database.TaskDatabase
 import com.berkan_uygunucarlar.todolist.database.TaskEntry
@@ -17,6 +18,8 @@ class TaskViewModel(application: Application) : AndroidViewModel(application) {
     private val repository : TaskRepository = TaskRepository(taskDao)
 
     val getAllTasks : LiveData<List<TaskEntry>> = repository.getAllTasks()
+
+    val getAllPriorityTasks : LiveData<List<TaskEntry>> = repository.getAllPriorityTasks()
 
     fun insert(taskEntry: TaskEntry){
         viewModelScope.launch(Dispatchers.IO){
@@ -40,6 +43,11 @@ class TaskViewModel(application: Application) : AndroidViewModel(application) {
         viewModelScope.launch(Dispatchers.IO){
             repository.deleteAll()
         }
+    }
+
+
+    fun searchDatabase(searchQuery: String) : LiveData<List<TaskEntry>>{
+        return repository.searchDatabase(searchQuery)
     }
 
 }
